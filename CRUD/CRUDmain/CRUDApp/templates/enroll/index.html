@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD-Sandeep</title>
+    <link rel="stylesheet" href="{% static 'enroll/CSS/bootstrap.min.css' %}">
+<body>
+    <div class="container mt-5">
+        <!-- Add border, padding, and rounded corners along with text size utilities -->
+        <h2 class="text-center alert alert-danger rounded ">
+            Function Based View ModelForm CRUD Project
+        </h2>
+        {% block content %}{% endblock %}
+    </div>
+    
+
+    <script src="{% static 'enroll/JS/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'enroll/JS/jquery.js' %}"></script>
+    <script src="{% static 'enroll/JS/popper.js' %}"></script>
+
+
+    <!-- <input type="password" id="password" name="password" class="form-control">
+     <button type="button" onclick="togglePassword()">Show/Hide</button>
+
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById("password");
+        var type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+    }
+</script> -->
+
+</body>
+</html>
